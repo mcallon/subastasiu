@@ -15,10 +15,17 @@ class FactoriaFachada implements IFactoriaFachada {
 		return static::$privadaFachada;
 	}
 	public static function getPublicaFachada() {
+		if (!isset(static::$publicaFachada)) {
+			static::$publicaFachada = new PublicaFachada();
+		}
+		return static::$publicaFachada;
 		
 	}
 	public static function getAdminFachada() {
-		
+		if (!isset(static::$adminFachada)) {
+			static::$adminFachada = new AdminFachada();
+		}
+		return static::$adminFachada;
 	}
 }
 ?>

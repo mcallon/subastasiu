@@ -1,11 +1,12 @@
 <?php
 /**
  * Clase de la que extienden los controladores de casos de uso
- * de la parte publica.
+ * de la parte de administracion.
  * @author Miguel Callon
  */
-abstract class PublicoControlador extends AbstractControlador {
+abstract class AdminControlador extends AbstractControlador {
 	public function accion($accion) {
+		$this->isAutenticadoAdmin();
 		$conexionBD = new MysqlDAO();
 		try {
 			// Abrimos la conexion contra la base de datos

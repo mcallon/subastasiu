@@ -4,13 +4,9 @@
  * de la parte privada y de administracion.
  * @author Miguel Callon
  */
-abstract class PrivadoControlador extends AbstractControlador {
-	private function isAutenticado() {
-		// TODO Implementar
-	}
-		
+abstract class PrivadoControlador extends AbstractControlador {	
 	public function accion($accion) {
-		$this->isAutenticado();
+		$this->isAutenticadoPrivado();
 		$conexionBD = new MysqlDAO();
 		try {
 			// Abrimos la conexion contra la base de datos

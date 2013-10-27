@@ -14,7 +14,6 @@ class CrearSubastaControlador extends PrivadoControlador {
 	 * Ejecuta las acciones del controlador.
 	 */
 	protected function ejecutar($accion) {
-		echo "ejecutar accion: $accion";
 		switch($accion) {
 			case "mostrarFormulario":
 				// Muestra el formulario de subastas

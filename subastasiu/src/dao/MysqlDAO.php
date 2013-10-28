@@ -8,9 +8,9 @@ class MysqlDAO extends AbstractDAO implements IDAO {
 	private $link;
 	
 	public function connectarBD() {
-		$this->link = mysql_connect("localhost","userdiu","passdiu") or 
+		$this->link = mysql_connect(HOST_BD, USUARIO_BD, CLAVE_BD) or 
 			die ('No se pudo conectar: ' . mysql_error());
-    	mysql_select_db("ControlHoras") or
+    	mysql_select_db(NOMBRE_BD) or
     		 die('No se pudo seleccionar la base de datos');
 	}
 	

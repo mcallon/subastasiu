@@ -17,4 +17,10 @@
 	 define( 'MULTIIDIOMA_KEY', 'MULTIIDIOMA_KEY');
 	 // El LOCALE a utilizar en caso de no especificar ninguno
 	 define( 'LOCALE_DEFAULT', 'es_ES');
+	 
+	 // Usuario de base de datos
+	 define( 'HOST_BD', 'localhost');
+	 define( 'USUARIO_BD', 'userdiu');
+	 define( 'CLAVE_BD', 'passdiu');
+	 define( 'NOMBRE_BD', 'SubastasIU');
 ?>
